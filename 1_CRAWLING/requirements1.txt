@@ -1,0 +1,1 @@
+Necessary packages and their version
