@@ -1,1 +1,3 @@
-Necessary packages and their version
+# Necessary python packages and their version
+bs4 = 0.0.2
+requests = 2.31.0
