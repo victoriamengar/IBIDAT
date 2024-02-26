@@ -45,7 +45,7 @@ Number of students: 22913
 
 ## Exercise 2
 
-This is a Python script that 
+This repository contains an R script designed to predict View Through Rate (VTR) using various machine learning techniques. Below is a guide on how to install, use, and interpret the script.
 
 ### Installation
 
@@ -53,16 +53,18 @@ This is a Python script that
 
   >git clone https://github.com/victoriamengar/IBIDAT.git
 
-2. Navigate to the exercise 2 directory:
+2. Navigate to the exercise 2 directory inside of the R terminal:
 
-  >cd IBIDAT/2_PREDICTION
+  >setwd(IBIDAT/2_PREDICTION)
 
 5. Install the required R packages:
 
   requirements2.txt
 
 ### Usage
-1. Source the prediction.R script into VS Code or RStudio IDEs:
+1. Open your preferred Integrated Development Environment (IDE) such as VS Code or RStudio
+
+2. Source the prediction.R script into your IDE:
 
   >source("prediction.R")
 
@@ -72,3 +74,14 @@ This is a Python script that
 
 ### Expected output
 
+The script will perform the following steps:
+
+1. Load the required R libraries
+2. Read the training and prediction data from CSV files
+3. Conduct exploratory data analysis (EDA) on the training data, including summary statistics, data structure, missing values, box plots, and correlation matrix. 
+4. Save the results in eda_results.pdf and eda_results.txt
+5. Create a smaller dataset with the most correlated variables identified during EDA
+6. Train various machine learning models, including linear regression, random forest, and XGBoost, using both complete and reduced datasets
+7. Evaluate the performance of each model on a validation set using mean squared error
+8. Make predictions on the prediction data using the best-performing model (linear regression)
+9. Ensure predicted VTR values are non-negative and save them to a CSV file named predicted_VTR.csv

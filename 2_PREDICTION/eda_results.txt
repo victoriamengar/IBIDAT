@@ -1,0 +1,48 @@
+[1] "Summary Statistics:\n"
+  appType_vtr     creatSize_vtr    creatType_vtr     deviceOs_vtr   
+ Min.   :0.6409   Min.   :0.3960   Min.   :0.3960   Min.   :0.5106  
+ 1st Qu.:0.6839   1st Qu.:0.6551   1st Qu.:0.6910   1st Qu.:0.6869  
+ Median :0.6839   Median :0.7037   Median :0.6910   Median :0.6869  
+ Mean   :0.6908   Mean   :0.7057   Mean   :0.6909   Mean   :0.6909  
+ 3rd Qu.:0.6839   3rd Qu.:0.7037   3rd Qu.:0.6910   3rd Qu.:0.7080  
+ Max.   :0.7601   Max.   :0.8374   Max.   :0.6910   Max.   :0.8688  
+   domain_vtr       tsHour_vtr       tsDow_vtr     
+ Min.   :0.0000   Min.   :0.6702   Min.   :0.6846  
+ 1st Qu.:0.5471   1st Qu.:0.6764   1st Qu.:0.6856  
+ Median :0.6815   Median :0.6933   Median :0.6914  
+ Mean   :0.6491   Mean   :0.6936   Mean   :0.6911  
+ 3rd Qu.:0.7822   3rd Qu.:0.7137   3rd Qu.:0.6951  
+ Max.   :2.8571   Max.   :0.7238   Max.   :0.7014  
+[1] "\nData Structure:\n"
+'data.frame':	10000 obs. of  7 variables:
+ $ appType_vtr  : num  0.76 0.76 0.76 0.76 0.76 ...
+ $ creatSize_vtr: num  0.829 0.829 0.829 0.829 0.829 ...
+ $ creatType_vtr: num  0.691 0.691 0.691 0.691 0.691 ...
+ $ deviceOs_vtr : num  0.687 0.687 0.687 0.687 0.687 ...
+ $ domain_vtr   : num  0.998 0.836 0.526 0.413 2.857 ...
+ $ tsHour_vtr   : num  0.671 0.714 0.674 0.674 0.681 ...
+ $ tsDow_vtr    : num  0.701 0.686 0.701 0.691 0.695 ...
+[1] "\nMissing Values:\n"
+  appType_vtr creatSize_vtr creatType_vtr  deviceOs_vtr    domain_vtr 
+            0             0             0             0             0 
+   tsHour_vtr     tsDow_vtr 
+            0             0 
+[1] "\nCorrelation Matrix:\n"
+                appType_vtr creatSize_vtr creatType_vtr deviceOs_vtr
+appType_vtr     1.000000000  -0.003441016  -0.046070787 -0.004670223
+creatSize_vtr  -0.003441016   1.000000000   0.073301965  0.191404075
+creatType_vtr  -0.046070787   0.073301965   1.000000000 -0.000899810
+deviceOs_vtr   -0.004670223   0.191404075  -0.000899810  1.000000000
+domain_vtr      0.076902215   0.189708929   0.012928037  0.115000824
+tsHour_vtr     -0.032101179  -0.024007576   0.013261257 -0.016506695
+tsDow_vtr      -0.016254664  -0.003433035  -0.001241563 -0.006706986
+train_data$VTR  0.077794387   0.186023353   0.032143003  0.058337224
+                domain_vtr  tsHour_vtr    tsDow_vtr train_data$VTR
+appType_vtr    0.076902215 -0.03210118 -0.016254664    0.077794387
+creatSize_vtr  0.189708929 -0.02400758 -0.003433035    0.186023353
+creatType_vtr  0.012928037  0.01326126 -0.001241563    0.032143003
+deviceOs_vtr   0.115000824 -0.01650669 -0.006706986    0.058337224
+domain_vtr     1.000000000  0.01239328  0.002153831    0.465634634
+tsHour_vtr     0.012393283  1.00000000  0.014692067    0.023381159
+tsDow_vtr      0.002153831  0.01469207  1.000000000    0.002355653
+train_data$VTR 0.465634634  0.02338116  0.002355653    1.000000000
